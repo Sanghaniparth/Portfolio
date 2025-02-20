@@ -25,8 +25,8 @@ def index(request):
         #MongoInsert
         insert = mycol.insert_one(x)
         #sqllite Insert
-        sql=Contact(name=uname,email=uemail,number=unumber,message=umessgae)
-        sql.save()
+        #sql=Contact(name=uname,email=uemail,number=unumber,message=umessgae)
+        #sql.save()
         return render(request,"index.html")
        
     return render(request,"index.html")
