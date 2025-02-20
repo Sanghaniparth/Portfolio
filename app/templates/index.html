@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Sanghani</title>
+    <link rel="website icon" type="png" href="static/lgo.png">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body class="body">
+    <div class="nav">
+        <div style="display: flex;" class="logo"  >
+            <img  src="static/lgo.png">
+            <p style="-webkit-user-select: none;user-select: none;">Parth Sanghani</p>
+        </div>
+        <div class="nav_links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#skills">Skills</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+           <h1 style=" -webkit-user-select: none;user-select: none;"> Hi, I am Parth Sanghani. I am Web Developer</h1>
+           <p style=" -webkit-user-select: none;user-select: none;">Secure a responsible carrier opportunity to fully utilize my skills and my training while making a significant contribution 
+            to the sucess of the company.</p>
+            <a href="#contact"><button>Contact-Me</button></a> 
+        </div>
+        <div class="hero">
+            <img  style=" -webkit-user-select: none;user-select: none;" src="static/hero.png">
+        </div>
+    </div>
+
+    <div class="container2" id="about">
+        <h1 style=" -webkit-user-select: none;user-select: none;">Hi, I am Parth Sanghani,</h1>
+        <p style=" -webkit-user-select: none;user-select: none;">
+            As a new graduate, I'm really excited about starting an internship that combines software development and cybersecurity.
+             I love coding and I'm passionate about building secure and reliable software systems and applications. During my studies, 
+             I learned a lot of different programming languages and the best practices for keeping software safe. I enjoy tackling tough 
+             problems and I'm always looking for ways to improve my skills in both software development and cybersecurity. This helps me
+              to make sure that security is a key part of the projects I work on from the very beginning.
+
+            I'm looking for a job where I can use my skills creatively and help the company succeed. I want to join a team where I can use 
+            my technical abilities to create secure software solutions, while also learning from experienced professionals. I'm particularly
+             interested in workplaces that encourage solving problems in new ways and prioritize security. By combining my technical knowledge 
+             with a commitment to ongoing learning, I aim to work on projects that not only meet but exceed security standards, helping to 
+             achieve the company’s goals.
+        </p>
+    </div>
+
+    <div class="container3" id="project">
+        <div class="subcontainer">
+            <h1 style=" -webkit-user-select: none;user-select: none;">Trading Bot</h1>
+
+                <ul>
+                    <li style=" -webkit-user-select: none;user-select: none;">
+                    Developed and designed a sophisticated web-based application serving as a trading bot for
+                automated cryptocurrency transactions in Python.
+                    </li>
+                    <li style=" -webkit-user-select: none;user-select: none;">
+                        Utilized advanced statistical algorithms and indicators to forecast optimal trading momentum,
+                enhancing decision-making processes. 
+                    </li>
+                    <li style=" -webkit-user-select: none;user-select: none;">
+                        Integrated Binance API and security keys seamlessly into the application, ensuring secure access
+                to trading accounts and facilitating real-time transactions.
+                    </li>
+                    <li style=" -webkit-user-select: none;user-select: none;">
+                        Demonstrated proficiency in cryptocurrency trading strategies and software development,
+                resulting in a functional and efficient trading solution.
+                    </li>
+                </ul>
+                
+            
+        </div>
+        <div class="subcontainer">
+            <h1 style=" -webkit-user-select: none;user-select: none;">Trusted Networks</h1>
+            <p>
+                <ul>
+                    <li style=" -webkit-user-select: none;user-select: none;">
+                        Implemented a project integrating trusted networks to facilitate secure data transmission
+                        between entities using NetLogo.
+                    </li>
+                    <li style=" -webkit-user-select: none;user-select: none;">
+                        Leveraged practical application of trusted networks to ensure the integrity and confidentiality of
+                        transmitted data.
+                    </li>
+                    <li style=" -webkit-user-select: none;user-select: none;">
+                        Incorporated behavioral analysis alongside traditional security approaches to enhance security
+                        measures and minimize potential attack surfaces.
+                    </li>
+                    <li style=" -webkit-user-select: none;user-select: none;">
+                        Resulted in an enhanced security framework, effectively reducing the attack surface and secure
+                        data protection mechanisms against potential threats.
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="container41" id="skills">
+        <h1 style=" -webkit-user-select: none;user-select: none;">Skills</h1>
+        <div>
+            <p style=" -webkit-user-select: none;user-select: none;">Python</p>
+            <div class="bar"><div  class="python"></div></div>
+            <p style=" -webkit-user-select: none;user-select: none;">C/C++</p>
+            <div class="bar"><div class="c"></div></div>
+            <p style=" -webkit-user-select: none;user-select: none;">HTML5</p>
+            <div class="bar"><div class="html"></div></div>
+            <p style=" -webkit-user-select: none;user-select: none;">CSS</p>
+            <div class="bar"><div class="css"></div></div>
+        </div>
+        
+    </div>
+    <div class="container4" id="contact">
+        <div class="contactbg">
+            <h1 style=" -webkit-user-select: none;user-select: none;">Contact-Me</h1>
+            {% if message %}
+            <h2 style=" -webkit-user-select: none;user-select: none;">{{ message}}</h2>
+            {% endif %}
+                <form action="#" method="POST">
+                    {% csrf_token %}
+                <!-- <label for="name">Name: </label> -->
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <!-- <label for="email">Email: </label> -->
+                <input type="text"  name="email" id="email" placeholder="Email" required>
+                <!-- <label for="number">Phone Number: </label> -->
+                <input type="number" name="number" id="number" placeholder="Phone Number" required>
+                <!-- <label for="message">Message: </label> -->
+                <!-- <input type="textarea" placeholder="Message" id="message"> -->
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="contact">
+            <h1  style=" -webkit-user-select: none;user-select: none;">Social Handles</h1>
+            <ul class="ref">
+                <li>
+                    <a href="mailto:sanghaniparth1@gmail.com"><img src="static/mail.svg"></a>
+                    <p>Contact-Me: sanghaniparth1@gmail.com</p>
+                </li>
+                <li>
+                    <a href="https://wa.me/9328874088"><img src="static/whatsapp.svg"/></a>
+                    <p>Call-Me: +91 9328874088</p>
+                </li>
+            </ul>
+            <div class="conicons">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/parth-sanghani-b79451193/"><img src="static/linkedin.svg"/></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Sanghaniparth"><img src="static/github.svg"/></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/parth_sanghani01/"><img src="static/insta.svg"/></a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/ParthSanghani01"><img src="static/x.svg"/></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/parth.sanghani01/"><img src="static/facebook.svg"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>@All Right Reserved</div>
+        <div style="font-weight: bold;"><img style="align-items: center;" src="static/lgo.png">Parth Sanghani</div>
+    </div>
+    
+</body>
+</html>
