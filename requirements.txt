@@ -4,4 +4,7 @@ backports.zoneinfo==0.2.1
 Django==4.2.13
 dnspython==2.6.1
 pymongo==4.8.0
-
+backports.zoneinfo==0.2.1
+setuptools>=65.5.1
+wheel>=0.38.4
+pip>=23.0
